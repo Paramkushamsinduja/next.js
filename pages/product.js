@@ -23,7 +23,7 @@ const Courses = (props) => {
 
                             <div class="card-body">
                                 <h5 className={`card-title ${styles.title}`}>{item.title}</h5>
-                                <p className="card-text"><small className="text-muted">Category: {item.category}</small></p>
+                                <h2 className="card-text"><small className="text-muted">Category: {item.category}</small></h2>
                                 <p className={`card-text ${styles.description}`}>{item.description}</p>
                                 <p className="card-text"><small className="text-muted">Price: Rs {item.price}</small></p>
                             </div>
