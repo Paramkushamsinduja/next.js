@@ -1,11 +1,17 @@
 import React from "react";
-
-const Lab = () => {
+export const getStaticProps=()=>{
+    //..api call
+    return{
+      props:{ footerstatus : true}
+    }
+  }
+const lab=(props) =>{
+   
     return(
         <div>
-            <h2>This is lab file.</h2>
+            <h1>This is a Lab page. </h1>
         </div>
     )
-}
 
-export default Lab;
+}
+export default lab

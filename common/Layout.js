@@ -1,19 +1,29 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import Navbar from './Navbar'
+import React from "react";
+import Header from "../Common/Header";
+import Footer from "../Common/Footer";
+import NavBar from "../Common/NavBar";
+import Navigation from "./Navigationamazon";
 
-const Layout = ({children}) => {
-  return (
-    <>
-        <div className='container'>
-            <Header/>
-            <Navbar />
+const Layout = (props) => {
+    const { children, footerstatus } = props;
+    return (
+      <>
+        {true ? (
+          <div>
+   
+            <Navigation/>
             {children}
-            <Footer/>
-        </div>
-    </>
-  )
-}
-
-export default Layout
+            {!footerstatus && <Footer />}
+          </div>
+        ) : (
+          <div className="container">
+       
+            <Navigation/>
+            {children}
+            {!footerstatus && <Footer />}
+          </div>
+        )}
+      </>
+    );
+  };
+export default Layout;

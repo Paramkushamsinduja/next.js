@@ -1,25 +1,27 @@
 import React from "react";
-import Header from '../common/Header';
-import Footer from '../common/Footer';
-import Navbar from '../common/Navbar';
+import Link from 'next/link';
+export const getStaticProps=()=>{
+    //..api call
+    return{
+      props:{ footerstatus : true}
+    }
+  }
 
-const Facilities = () => {
+const facilities =(props) =>{
+   
     return(
         <div>
-
-            <Header/>
-            <Navbar/>
-            <h2>This is facilties file.</h2>
-            <ul>
-                <li>Lab</li>
-                <li>Playground</li>
-                <li>Library</li>
-                <li>Sports</li>
-            </ul>
-            <Footer/>
-           
+      
+            <h1>This is a facilities files in  Next Js Training folder.</h1>
+            <ui>
+                <li><Link href="/facilities/lab" >lab</Link></li>
+                <li><Link href="/facilities/playground">playground</Link></li>
+                <li><Link href="/facilities/library">library</Link></li>
+                <li><Link href="/facilities/sports">sports</Link></li>
+            </ui>
+  
         </div>
     )
-}
 
-export default Facilities;
+}
+export default facilities

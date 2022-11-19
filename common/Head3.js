@@ -3,7 +3,7 @@ import React from 'react'
 const Head3 = () => {
   return (
     <div className='col-3'>
-        login button
+        <h2>Login button</h2>
     </div>
   )
 }

@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+const Footer=() =>{
+   
+    return(
+      <>
+        <div class="text-center text-dark p-3">
+        © 2023 Copyright:
+          <a class="text-dark" href="https://amazon.com/">Mynta.com</a>
+            
+        </div>
 
-const Footer = () => {
-  return (
-    <div>
-        <h3>Copyright</h3>
-    </div>
-  )
+      </>
+    )
+
 }
-
 export default Footer
