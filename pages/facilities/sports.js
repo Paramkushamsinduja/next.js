@@ -1,18 +1,18 @@
 import React from "react";
 
-export const getStaticProps=()=>{
-    //..api call
-    return{
-      props:{ footerstatus : true}
+export const getStaticProps = () => {
+    //api call
+    return {
+      props : {footerstatus: true}
     }
   }
-const sports=(props) =>{
-   
+
+const Sports = (props) => {
     return(
         <div>
-            <h1>This is a sports page. </h1>
+            <h2>This is Sports file.</h2>
         </div>
     )
-
 }
-export default sports
+
+export default Sports;

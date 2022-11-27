@@ -1,14 +1,20 @@
 import React from "react";
-import Header from '../common/Header';
-import Footer from '../common/Footer';
-import Navbar from '../common/Navbar';
+import styles from '../styles/Contact.module.scss';
 
-const Contact = () => {
+const Contact =(props) =>{
+   
     return(
-        <div>
-            <h2>This is contact file.</h2>
-        </div>
+                <div className={styles.contact}>
+                    <h2 className={styles.contact__title}>Any quaries? <span className={styles.colored}>Contact us.</span>
+                    </h2>
+                    <p className={styles.contact__paragraph}>We are looking forward to hearing from you. Feel free to contact us
+                        if you have any questions!</p>
+                    <a href="https://www.myntra.com/contactus">
+                        <button>Contact Us</button>
+                    </a>
+                </div>
+            
     )
-}
 
-export default Contact;
+}
+export default Contact

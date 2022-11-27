@@ -2,6 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import Styles from '../styles/Courses.module.css'
 
+
 export const getStaticProps =async ( ) => {
     //..api call
     const response = await fetch('https://fakestoreapi.com/products?sort=desc');
@@ -16,7 +17,7 @@ const Courses=(props) =>{
     const {productData} = props;
     return ( 
         <>
-        <center><h2>CHRISTMAS DEALS</h2></center>
+        <center><h2>BIGGEST DEALS ON TOP BRANDS</h2></center>
         <div className='container'>
         <div className='row'>
         {productData.map(item => (
@@ -29,6 +30,8 @@ const Courses=(props) =>{
                 <h6>Rs. {item.price}</h6>
                 </div>
                 </div>
+            
+
             
             
         ))}

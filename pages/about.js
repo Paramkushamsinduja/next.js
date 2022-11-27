@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from '../styles/About.module.css';
+import styles from '../styles/about.module.scss';
 import Image from "next/image";
 import Head from "next/head";
 
@@ -33,7 +33,7 @@ const about =(props) =>{
             <h2 className={styles.about_text}>This is about file.</h2>
             {/* <img src='https://blog.rocketseat.com.br/content/images/2018/12/ssr-nextjs-reactjs.png'/> */}
             {/* <img src='/ssr-nextjs-reactjs.png' /> */}
-            <Image src='/ssr-nextjs-reactjs.png' width={400} height={300}/>
+            <Image src='/0_Kce1FVhfqyiUF1JY.png' width={400} height={300}/>
         </div>
         </>
       )

@@ -1,17 +1,18 @@
 import React from "react";
-export const getStaticProps=()=>{
-    //..api call
-    return{
-      props:{ footerstatus : true}
+
+export const getStaticProps = () => {
+    //api call
+    return {
+      props : {footerstatus: true}
     }
   }
-const playground=(props) =>{
-   
+
+const Playground = (props) => {
     return(
         <div>
-            <h1>This is a playground page. </h1>
+            <h2>This is Playground file.</h2>
         </div>
     )
-
 }
-export default playground
+
+export default Playground;
